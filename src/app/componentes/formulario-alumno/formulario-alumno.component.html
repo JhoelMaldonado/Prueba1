@@ -1,0 +1,19 @@
+<section>
+  <fieldset>
+    <label for="">Rut del alumno</label>
+    <input type="text" [value]="nuevoAlumno.rut" (input)="ingresarRut($event)"><br>
+
+    <label for="">Nombre del alumno</label>
+    <input type="text" [value]="nuevoAlumno.nombre" (input)="ingresarNombre($event)"><br>
+
+    <label for="">Apellido del alumno</label>
+    <input type="text" [value]="nuevoAlumno.apellido" (input)="ingresarApellido($event)"><br>
+
+    <label for="">Edad del alumno</label>
+    <input type="text" [value]="nuevoAlumno.edad" (input)="ingresarEdad($event)"><br>
+
+    <button type="button" role="button" (click)="guardarAlumno()">Registrar </button>
+  </fieldset>
+</section>
+
+<!--Crear Guardar alumno , ingresarEdad, ingresarApellido, ingresarNombre , ingresarRut-->

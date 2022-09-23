@@ -1,0 +1,14 @@
+<article>
+  <p> {{ alumno.rut }} </p>
+  <h3 *ngIf="alumno.nombre; then unIf; else unElse"></h3>
+    <ng-template #unIf>
+      <p>{{ alumno.nombre }}</p>
+    </ng-template>
+  <ng-template #unElse>
+    <p>No Tiene Nombre</p>
+  </ng-template>
+  <p>{{ alumno.apellido }}</p>
+  <p>{{ alumno.edad }}</p>
+  <p>{{ alumno.seccion.nombreSeccion}}</p>
+  <p>{{ alumno.seccion.id}}</p>
+</article>

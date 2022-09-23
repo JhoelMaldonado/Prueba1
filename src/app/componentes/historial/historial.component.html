@@ -1,0 +1,11 @@
+<!--Me lo muestra con toda la informacion-->
+<article>
+  <p>fecha: {{ historial.fecha | date: 'dd-MM-yyyy' }}</p> <!--me muestra el formato pedido-->
+  <p>{{ historial.hora | date: 'HH:mm:ss'}}</p> <!-- Me pide le formato pedido-->
+  <p>{{ historial.alumno.rut }}</p>
+  <p>{{ historial.alumno.nombre }}</p>
+  <p>{{ historial.alumno.apellido }}</p>
+  <p>{{ historial.alumno.edad }}</p>
+  <p>{{ historial.alumno.seccion.id }}</p>
+  <p>{{ historial.alumno.seccion.nombreSeccion }}</p>
+</article>
